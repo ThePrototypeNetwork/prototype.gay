@@ -1,5 +1,3 @@
-this and a vnc-girlskissing instance
-
+# prototype.gay
 - https://prototype.gay
-- vnc prototype.gay
 - `curl https://prototype.gay`
