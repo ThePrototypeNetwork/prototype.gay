@@ -7,7 +7,7 @@ PORT = 2020
 class MyHandler(http.server.SimpleHTTPRequestHandler):
         def do_GET(self):
                 if 'curl' in self.headers.get('User-Agent', ''):
-                        result = subprocess.run(['/root/.cargo/bin/viu', 'faggot.png'], capture_output=True, text=True)
+                        result = subprocess.run(['/root/.cargo/bin/viu' ,'-w', '70', '-h', '30', '-t', 'faggot.png'], capture_output=True, text=True)
                         output = result.stdout
                         self.send_response(200)
                         self.send_header('Content-type', 'text/plain')
